@@ -1,0 +1,1 @@
+import {createOrder as apiCreateOrder} from './api'; export const submitOrder=<T,>(order:T)=>apiCreateOrder(order);
