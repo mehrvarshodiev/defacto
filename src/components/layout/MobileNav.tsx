@@ -1,0 +1,1 @@
+import {Link} from 'react-router-dom'; export default function MobileNav(){return <nav className="fixed bottom-0 left-0 right-0 z-40 grid grid-cols-4 border-t bg-white/95 p-2 text-center text-[11px] backdrop-blur md:hidden"><Link to="/">Home</Link><Link to="/shop">Shop</Link><Link to="/store">Store</Link><Link to="/cart">Cart</Link></nav>}
