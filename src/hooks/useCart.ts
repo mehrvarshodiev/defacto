@@ -1,0 +1,1 @@
+import {useAppSelector} from '../store/hooks'; export default function useCart(){const items=useAppSelector(s=>s.cart.items);return {items,count:items.reduce((a,i)=>a+i.quantity,0),subtotal:items.reduce((a,i)=>a+i.product.price*i.quantity,0)}}
