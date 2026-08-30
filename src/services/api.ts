@@ -1,0 +1,1 @@
+export async function createOrder<T>(payload:T){return Promise.resolve({ok:true,payload});}
