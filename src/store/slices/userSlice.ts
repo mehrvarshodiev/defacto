@@ -1,0 +1,1 @@
+import {createSlice,PayloadAction} from '@reduxjs/toolkit'; interface User{phone:string;name:string;isGuest:boolean}; const slice=createSlice({name:'user',initialState:{phone:'',name:'',isGuest:true} as User,reducers:{setUser:(s,a:PayloadAction<Partial<User>>)=>Object.assign(s,a.payload)}}); export const {setUser}=slice.actions; export default slice.reducer;
