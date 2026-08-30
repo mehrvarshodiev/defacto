@@ -1,0 +1,1 @@
+import {useAppSelector} from '../store/hooks'; import {t} from '../i18n'; export default function useLanguage(){const locale=useAppSelector(s=>s.checkout.locale); return {locale,copy:t(locale)}}
