@@ -1,0 +1,1 @@
+import type {InputHTMLAttributes} from 'react'; export default function Input(props:InputHTMLAttributes<HTMLInputElement>){return <input className="h-12 w-full rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-brand" {...props}/>;}
