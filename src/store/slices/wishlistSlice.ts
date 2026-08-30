@@ -1,0 +1,1 @@
+import {createSlice,PayloadAction} from '@reduxjs/toolkit'; const slice=createSlice({name:'wishlist',initialState:[] as string[],reducers:{toggle:(s,a:PayloadAction<string>)=>{const i=s.indexOf(a.payload);i>=0?s.splice(i,1):s.push(a.payload)}}}); export const {toggle}=slice.actions; export default slice.reducer;
