@@ -1,0 +1,1 @@
+import {products} from '../data/products'; export const getProducts=async()=>products;
