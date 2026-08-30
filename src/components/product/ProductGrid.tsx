@@ -1,0 +1,1 @@
+import type {Product,Locale} from '../../types/product'; import ProductCard from './ProductCard'; export default function ProductGrid({products,locale}:{products:Product[];locale:Locale}){return <div className="grid grid-cols-2 gap-x-3 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 lg:gap-5">{products.map(p=><ProductCard key={p.id} p={p} locale={locale}/>)}</div>}
