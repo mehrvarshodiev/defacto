@@ -1,0 +1,1 @@
+export default function Badge({children}:{children:React.ReactNode}){return <span className="rounded-full bg-brand px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">{children}</span>;}
