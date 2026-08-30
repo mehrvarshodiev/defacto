@@ -1,0 +1,1 @@
+import {createSlice,PayloadAction} from '@reduxjs/toolkit'; interface Order{ id:string; total:number; createdAt:string; status:'new'|'confirmed'|'completed' } const slice=createSlice({name:'orders',initialState:[] as Order[],reducers:{addOrder:(s,a:PayloadAction<Order>)=>{s.unshift(a.payload)}}}); export const {addOrder}=slice.actions; export default slice.reducer;
