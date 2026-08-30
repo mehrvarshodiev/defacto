@@ -1,0 +1,1 @@
+export const categories=[{id:'women',name:'Women'},{id:'men',name:'Men'},{id:'kids',name:'Kids'}] as const;
