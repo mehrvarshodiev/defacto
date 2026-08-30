@@ -1,0 +1,3 @@
+export type Locale='tj'|'ru'|'en'; export type Category='men'|'women'|'kids'; export interface Product{ id:string; slug:string; category:Category; name:Record<Locale,string>; description:Record<Locale,string>; price:number; oldPrice?:number; image:string; sizes:string[]; colors:string[]; collection:string; sale?:boolean; featured?:boolean }
+export interface CartItem{ product:Product; size:string; color:string; quantity:number }
+export type Delivery='express'|'pickup'; export type Payment='cash'|'kortiMilli'|'alifMobi';
